@@ -17,5 +17,6 @@ mongoose
     .catch((err) => console.log(err));
 
 app.use("/api/calendar", require("./Controllers/CalendarController"));
+app.use("/api/chooseRoom", require("./Controllers/ChooseRoomController"));
 
 app.listen(5000, () => console.log("Started Server"));
